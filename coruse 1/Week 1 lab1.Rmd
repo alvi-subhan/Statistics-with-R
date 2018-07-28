@@ -440,6 +440,7 @@ decreased over time.
 # type your code for Question 5 here, and Knit
 present=present %>% mutate(total=boys+girls)
 present=present %>% mutate(prop_boys=boys/total * 100)
+ggplot(data=present,aes(x=year,y=prop_boys)) + geom_point() + geom_line()
 ```
 
 
@@ -487,7 +488,7 @@ descending order).
 </ol>
 
 ```{r most-total-births}
-# type your code for Question 8 here
+# type your code for Question 8 her
 # sample code is provided below, edit as necessary, uncomment, and then Knit
 #present %>%  mutate(total = ?) %>% arrange(desc(total))
 arrange(present,desc(total))
