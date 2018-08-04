@@ -257,7 +257,8 @@ this data frame as `sfo_feb_flights`. How many flights meet these criteria?
 
 ```{r sfo-feb-flights}
 # type your code for Question 1 here, and Knit
-
+nrow(sfo_feb_flights)
+summary(sfo_feb_flights)
 ```
 
 

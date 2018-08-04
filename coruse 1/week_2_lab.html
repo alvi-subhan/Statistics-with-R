@@ -365,7 +365,38 @@ rdu_flights &lt;-<span class="st"> </span>nycflights <span class="op">%&gt;%</sp
 </li>
 </ol></li>
 </ol>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># type your code for Question 1 here, and Knit</span></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># type your code for Question 1 here, and Knit</span>
+<span class="kw">nrow</span>(sfo_feb_flights)</code></pre></div>
+<pre><code>## [1] 68</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">summary</span>(sfo_feb_flights)</code></pre></div>
+<pre><code>##       year          month        day           dep_time      dep_delay    
+##  Min.   :2013   Min.   :2   Min.   : 1.00   Min.   : 613   Min.   :-10.0  
+##  1st Qu.:2013   1st Qu.:2   1st Qu.: 7.00   1st Qu.: 943   1st Qu.: -5.0  
+##  Median :2013   Median :2   Median :16.00   Median :1268   Median : -2.0  
+##  Mean   :2013   Mean   :2   Mean   :15.26   Mean   :1298   Mean   : 10.5  
+##  3rd Qu.:2013   3rd Qu.:2   3rd Qu.:22.50   3rd Qu.:1742   3rd Qu.:  9.0  
+##  Max.   :2013   Max.   :2   Max.   :28.00   Max.   :2159   Max.   :209.0  
+##     arr_time      arr_delay        carrier            tailnum         
+##  Min.   : 118   Min.   :-66.00   Length:68          Length:68         
+##  1st Qu.:1233   1st Qu.:-21.25   Class :character   Class :character  
+##  Median :1497   Median :-11.00   Mode  :character   Mode  :character  
+##  Mean   :1607   Mean   : -4.50                                        
+##  3rd Qu.:2062   3rd Qu.:  2.00                                        
+##  Max.   :2256   Max.   :196.00                                        
+##      flight          origin              dest              air_time    
+##  Min.   :  11.0   Length:68          Length:68          Min.   :317.0  
+##  1st Qu.:  85.0   Class :character   Class :character   1st Qu.:345.0  
+##  Median : 641.0   Mode  :character   Mode  :character   Median :354.0  
+##  Mean   : 795.1                                         Mean   :351.9  
+##  3rd Qu.:1487.2                                         3rd Qu.:360.0  
+##  Max.   :2126.0                                         Max.   :376.0  
+##     distance         hour           minute     
+##  Min.   :2565   Min.   : 6.00   Min.   : 1.00  
+##  1st Qu.:2586   1st Qu.: 9.00   1st Qu.:25.00  
+##  Median :2586   Median :12.50   Median :33.50  
+##  Mean   :2584   Mean   :12.62   Mean   :36.35  
+##  3rd Qu.:2586   3rd Qu.:17.00   3rd Qu.:54.00  
+##  Max.   :2586   Max.   :21.00   Max.   :59.00</code></pre>
 <ol start="2" style="list-style-type: decimal">
 <li>Make a histogram and calculate appropriate summary statistics for <strong>arrival</strong> delays of <code>sfo_feb_flights</code>. Which of the following is false?
 <ol>
